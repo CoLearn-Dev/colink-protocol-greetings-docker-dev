@@ -7,7 +7,7 @@ install_script = """
 docker pull ghcr.io/colearn-dev/colink-protocol-greetings-docker-dev:0.1.0
 """
 entrypoint = """
-docker run --net=host -e COLINK_CORE_ADDR -e COLINK_JWT ghcr.io/colearn-dev/colink-protocol-greetings-docker-dev:0.1.0
+docker run -it --rm --net=host -e COLINK_CORE_ADDR -e COLINK_JWT ghcr.io/colearn-dev/colink-protocol-greetings-docker-dev:0.1.0
 """
 
 [greetings-docker]
