@@ -1,0 +1,15 @@
+[package]
+name = "greetings-docker"
+version = "0.1.0"
+keywords = ["greetings"]
+description = "greetings"
+install_script = """
+docker pull ghcr.io/colearn-dev/colink-protocol-greetings-docker-dev:0.1.0
+"""
+entrypoint = """
+docker run --net=host -e COLINK_CORE_ADDR -e COLINK_JWT ghcr.io/colearn-dev/colink-protocol-greetings-docker-dev:0.1.0
+"""
+
+[greetings]
+name = "greetings"
+description = "greetings"
