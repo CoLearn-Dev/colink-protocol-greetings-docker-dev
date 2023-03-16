@@ -6,9 +6,8 @@ name: Build
 
 jobs:
   build:
-    uses: CoLearn-Dev/colink-protocol-inventory-workflow-templates/.github/workflows/rust.yml@main
+    uses: CoLearn-Dev/colink-protocol-inventory-workflow-templates/.github/workflows/docker.yml@main
     with:
       protocol_name: greetings
-      package_name: colink-protocol-greetings
     secrets:
       SSH_KEY: ${{ secrets.SSH_KEY }}
